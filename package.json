@@ -1,0 +1,15 @@
+{
+  "name": "bujidao-shangan-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "布吉岛上岸指南：从三大运营商招聘了解备考与求职",
+  "packageManager": "pnpm@10.17.1",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 0.0.0.0 --port 5183 --strictPort",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 0.0.0.0 --port 5183 --strictPort"
+  },
+  "devDependencies": { "vitepress": "^1.6.4" }
+}
