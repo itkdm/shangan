@@ -19,7 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pages: read
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -34,8 +33,6 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
       - name: Build site
         run: pnpm docs:build
         env:
